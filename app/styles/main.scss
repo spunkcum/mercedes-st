@@ -1,0 +1,216 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@font-face {
+	font-family: csregular;
+	src: url('fonts/DaimlerCS-Regular.ttf');
+}
+
+@font-face {
+	font-family: cacregular;
+	src: url('fonts/DaimlerCACArab-Regular.ttf');
+}
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+body {
+	background: #262626;
+	background: -webkit-linear-gradient(-90deg,#262626,#171717 280px);
+	background: linear-gradient(180deg,#262626,#171717 280px);
+}
+
+h1 {
+	font-weight: bold;
+	color : #ffffff;
+	font-size: 45px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h2 {
+	color : #fff;
+/*font-family: cacregular,Helvetica,Arial,sans-serif';*/
+margin-bottom: 0px;
+margin-top: 0px;
+}
+
+a {
+	font-family: 'csregular,Helvetica,Arial,sans-serif';
+	color: #00adef;
+}
+
+
+.video {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+	padding-left: 15px;
+	padding-right: 15px;	
+}
+
+.footer {
+	margin-top: 50px;
+}
+
+/* Custom page header */
+.header {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+
+/* Make the masthead heading the same height as the navigation */
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	padding-bottom: 19px;
+}
+}
+
+/**
+* Header nav 
+*/
+.header {
+	border-bottom: unset;
+}
+
+.navbar {
+	border-bottom: 1px solid #fff;
+}
+
+ul.nav{
+	list-style: none; 
+	margin: 0; 
+	padding: 10px 0;
+	list-style-type: none;
+//background-color: #fff;
+display: flex;
+text-align: center;
+width: 100%;
+}
+
+.selected {
+	color: #00adef !important;
+}
+
+.scrolled ul.nav{
+	position: fixed; 
+	z-index: 2;
+	top: 0; 
+	right: 0; 
+	left: 0; 
+	background-color: #75b2ba; 
+	opacity: 1;
+}
+
+ul.nav li{
+	padding: 0; 
+	display: inline;
+	width: -webkit-fill-available;
+}
+
+ul.nav li a{
+	display: block; 
+	text-decoration: none;
+	line-height: 30px; 
+	padding: 5px 0; 
+	margin: 0 4px; 
+	font-size: 30px;
+	color: #fff;
+	display: inline-block;
+	font-family: cacregular;
+}
+
+ul.nav li.selected a{
+	color: #00adef;
+}
+
+ul.nav li a:hover{
+	text-decoration: none; 
+	color: #00adef;
+	background-color: unset;
+}
+
+ul.nav li a:focus{
+	background-color: unset;
+}
+
+.icon-bar {
+	background-color: #fff;
+}
+
+/* Custom page footer */
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+/** 
+Content
+**/
+
+.programText {
+	p {
+		font-size: 18px;
+	}
+}
+
+.faq {
+	text-align: center;
+}
+
+.topMargin {
+	margin-top: 25px;
+}
+
+/** 
+Footer
+**/
+.footer {
+	border-top: unset;
+}
+
+h1, h2, h3 {
+	font-family: cacregular;
+//font-weight: bold;
+}
+
+p {
+	font-family: csregular;
+	color : #ffffff;
+	font-size : 18px;
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-weight: unset;
+	}
+
+	ul.nav {
+		display: grid;
+	}
+
+	.mobileTopMargin {
+		margin-top: 30px;
+	}
+}
