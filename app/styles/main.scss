@@ -203,7 +203,7 @@ h1, h2, h3 {
 p {
 	font-family: csregular;
 	color : #ffffff;
-	font-size : 18px;
+	font-size : 20px;
 }
 
 @media (max-width: 767px) {
@@ -226,4 +226,8 @@ p {
 	.margin-right-20 {
 		display: -webkit-box;
 	}
+}
+
+.programList p span {
+	margin-right: 15px;
 }
