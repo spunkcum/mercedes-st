@@ -13,6 +13,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 	src: url('fonts/DaimlerCACArab-Regular.ttf');
 }
 
+@font-face {
+	font-family:"Electronic Highway Sign";
+	src:url("fonts/EHSMB.eot?") format("eot"),
+	url("fonts/EHSMB.woff") format("woff"),
+	url("fonts/EHSMB.TTF") format("truetype"),
+	url("fonts/EHSMB.svg#ElectronicHighwaySign") 
+	format("svg");
+}
+
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -72,7 +81,7 @@ a {
 /* Custom page header */
 .header {
 	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 10px;
+	margin: 0px 30px 40px 30px;
 
 	/* Make the masthead heading the same height as the navigation */
 	h3 {
@@ -91,7 +100,7 @@ a {
 }
 
 .navbar {
-	border-bottom: 1px solid #fff;
+	
 }
 
 ul.nav{
@@ -237,4 +246,35 @@ p {
 
 .programList p span {
 	margin-right: 25px;
+}
+
+#counter {
+	font-family:"Electronic Highway Sign";
+	color:yellow;
+	font-size:72px;
+}
+
+@media (max-width: 767.98px) { 
+	#counter {
+		font-size: 36px;
+	}
+}
+
+
+@media (max-width: 425px) { 
+	.imageSizeLeft {
+		height: 60px !important;
+	}
+
+	.imageSizeRight {
+		height: 50px !important;
+	}
+
+	.programList p span {
+		margin-right: 10px;
+	}
+
+	.header {
+		margin: 0px 0px 20px 0px;
+	}
 }
