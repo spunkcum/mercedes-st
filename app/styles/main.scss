@@ -100,7 +100,9 @@ a {
 }
 
 .navbar {
-	
+	width: 1145px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 ul.nav{
@@ -141,7 +143,7 @@ ul.nav li a{
 	margin: 0 4px; 
 	font-size: 30px;
 	color: #fff;
-	display: inline-block;
+	display: flex;
 	font-family: cacregular;
 }
 
@@ -207,6 +209,10 @@ Footer
 	border-top: unset;
 }
 
+.footerImage {
+	margin-top: -147px;
+}
+
 h1, h2, h3 {
 	font-family: cacregular;
 	color: #fff;
@@ -222,13 +228,56 @@ p {
 	font-size : 20px;
 }
 
+@media (max-width: 1440px) {
+	.navbar {
+		width: 1145px;
+		margin-right: auto; 
+		margin-left: auto;	
+	}
+}
+
+@media (max-width: 1024px) {
+	.navbar {
+		width: 950px;
+		margin-right: auto; 
+		margin-left: auto;	
+	}
+
+	.footerImage {
+		margin-top: -135px;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		width: 740px;
+		margin-right: auto; 
+		margin-left: auto;	
+	}
+
+	.header {
+		margin : 0 5px 40px 5px;
+	}
+
+	.footerImage {
+		margin-top: -115px;
+	}
+}
+
 @media (max-width: 767px) {
+	.navbar {
+		width: auto;
+		margin-right: auto; 
+		margin-left: auto;	
+	}
+
 	h1 {
 		font-weight: unset;
 	}
 
 	ul.nav {
 		display: grid;
+		justify-content: center;
 	}
 
 	.mobileTopMargin {
@@ -276,5 +325,15 @@ p {
 
 	.header {
 		margin: 0px 0px 20px 0px;
+	}
+
+	.footerImage {
+		margin-top: -80px;
+	}
+}
+
+@media (max-width: 375px) {
+	.footerImage {
+		margin-top: -70px;
 	}
 }
