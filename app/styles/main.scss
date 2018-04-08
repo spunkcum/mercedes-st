@@ -48,8 +48,8 @@ h2 {
 }
 
 a {
-	font-family: 'csregular,Helvetica,Arial,sans-serif';
-	color: #00adef;
+	font-family: csregular;
+	color: #fecb38;
 }
 
 .video {
@@ -105,7 +105,7 @@ ul.nav{
 }
 
 .selected {
-	color: #00adef !important;
+	color: #fecb38 !important;
 }
 
 .scrolled ul.nav{
@@ -137,12 +137,12 @@ ul.nav li a{
 }
 
 ul.nav li.selected a{
-	color: #00adef;
+	color: #fecb38;
 }
 
 ul.nav li a:hover{
 	text-decoration: none; 
-	color: #00adef;
+	color: #fecb38;
 	background-color: unset;
 }
 
@@ -203,6 +203,10 @@ h1, h2, h3 {
 	color: #fff;
 }
 
+h3 {
+	margin-top:40px !important;
+}
+
 p {
 	font-family: csregular;
 	color : #ffffff;
@@ -232,5 +236,5 @@ p {
 }
 
 .programList p span {
-	margin-right: 15px;
+	margin-right: 25px;
 }
