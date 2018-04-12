@@ -52,7 +52,7 @@
           Book prøvetur
         </h3>
         <p>
-          Book din egen tur med den ny Sprinter.
+          Jeres kunder kan booke en tur med den ny Sprinter, når de tilmelder sig.
         </p>
         <h3>
           Bliv klogere til tech talks
