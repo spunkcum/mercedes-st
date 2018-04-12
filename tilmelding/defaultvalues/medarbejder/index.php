@@ -64,63 +64,60 @@
         <h1 class="pt-5">Tilmeld dig her.</h1>
         <p>Tilmeld dig hurtigst muligt via formularen nedenfor, da der er et begrænset antal af billetter. Har du ikke mulighed for at deltage, vil vi bede dig melde afbud i formularen – det vil være en stor hjælp.</p>
 
-        <div id="wufoo-w3kycbb0d1l8w8" class="wufooContainer">
-          Fill out my <a href="https://dypaang.wufoo.eu/forms/w3kycbb0d1l8w8">online form</a>.
+        <div id="wufoo-piokdbc1le1ngw" class="wufooContainer">
+          Fill out my <a href="https://dypaang.wufoo.eu/forms/piokdbc1le1ngw">online form</a>.
         </div>
-        <script type="text/javascript">var w3kycbb0d1l8w8;(function(d, t) {
+        <script type="text/javascript">var piokdbc1le1ngw;(function(d, t) {
           var s = d.createElement(t), options = {
             'userName':'dypaang',
-            'formHash':'w3kycbb0d1l8w8',
+            'formHash':'piokdbc1le1ngw',
             'autoResize':true,
-            'height':'1268',
-            'defaultValues':'<?php include 'defaultvalues.php'; ?>',
+            'height':'1250',
             'async':true,
             'host':'wufoo.eu',
             'header':'hide',
-            'ssl':true
-          };
-          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
-          s.onload = s.onreadystatechange = function() {
-            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-            try { w3kycbb0d1l8w8 = new WufooForm();w3kycbb0d1l8w8.initialize(options);w3kycbb0d1l8w8.display(); } catch (e) {}};
-            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-          })(document, 'script');
-        </script>
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { piokdbc1le1ngw = new WufooForm();piokdbc1le1ngw.initialize(options);piokdbc1le1ngw.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
 
-        <p>
-          <a href="<?php include('pdflink.php');?>" target="_blank">
-            Læs en uddybning af betingelserne for tilmelding her.            
-          </a>
-        </p>
-        <p>
-          <a href="https://www.mercedes-benz-sprinter.dk/hangar" target="_blank">
-            Læs mere om arrangementet her.
-          </a>
-        </p>
+            <p>
+              <a href="<?php include('pdflink.php');?>" target="_blank">
+                Læs en uddybning af betingelserne for tilmelding her.            
+              </a>
+            </p>
+            <p>
+              <a href="https://www.mercedes-benz-sprinter.dk/hangar" target="_blank">
+                Læs mere om arrangementet her.
+              </a>
+            </p>
 
 
 
+          </div>
+        </div>
+
+        <div class="row pt-4">
+          <div class="col pt-5 text-center">
+            <p class="pt-3">Ankommer om:</p>
+            <p><span id="counter">00;00;00;00</span></p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="row pt-4">
-      <div class="col pt-5 text-center">
-        <p class="pt-3">Ankommer om:</p>
-        <p><span id="counter">00;00;00;00</span></p>
+      <div>
+        <img src="images/footer.png" class="img-fluid fullWidth">
       </div>
-    </div>
-  </div>
-
-  <div>
-    <img src="images/footer.png" class="img-fluid fullWidth">
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    var countDownDate = new Date("Jun 7, 2018 17:00:00").getTime();
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        var countDownDate = new Date("Jun 7, 2018 17:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
