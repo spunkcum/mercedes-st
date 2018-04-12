@@ -1,0 +1,6 @@
+.wufoo input#saveForm {
+	background-color: #9b3545;
+	color: white;
+	padding: 5px 10px;
+	border:none;
+}
