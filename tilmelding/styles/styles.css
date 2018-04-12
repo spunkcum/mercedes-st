@@ -1,0 +1,210 @@
+@font-face {
+	font-family: csregular;
+	src: url('fonts/DaimlerCS-Regular.ttf');
+}
+@font-face {
+	font-family: cacregular;
+	src: url('fonts/DaimlerCACArab-Regular.ttf');
+}
+
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {
+	font-family:"Electronic Highway Sign";
+	src:url("fonts/EHSMB.eot?") format("eot"),
+	url("fonts/EHSMB.woff") format("woff"),
+	url("fonts/EHSMB.TTF") format("truetype"),
+	url("fonts/EHSMB.svg#ElectronicHighwaySign") 
+	format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+body {
+	background-color: #000000;
+	color: white;
+}
+
+p {
+	font-family: "csregular", Arial;
+	font-size: 16px;
+}
+
+h1, h2, h3 {
+	font-family: cacregular, Arial;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+h3 {
+	font-size: 1.55em;
+}
+
+a {
+	color: #fecb38;
+}
+
+.fullWidth {
+	width:100%;
+}
+
+.slogan {
+	position:  absolute; 
+	bottom: 0; 
+	right: 0; 
+	padding-right: 15px; 
+	padding-bottom: 10px;
+	width:133px;
+}
+
+.background {
+	background-image: url(../images/background.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 2000px;
+}
+
+.craalogo {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top:-350px;
+}
+
+.mainContent {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: -50px;
+}
+
+
+@media (max-width: 575.98px) { 
+	.craalogo {
+		margin-top:-150px;
+	}
+
+	.mainContent {
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 575.98px) { 
+	.craalogo {
+		margin-top:-150px;
+	}
+
+	.mainContent {
+		margin-top: -20px;
+	}
+}
+
+@media (min-width: 767.98px) { 
+	.craalogo {
+		margin-top:-250px;
+	}
+
+	.mainContent {
+		margin-top: -30px;
+	}
+}
+
+@media (min-width: 991.98px) { 
+	.craalogo {
+		margin-top:-300px;
+	}
+}
+
+@media (min-width: 1199.98px) { 
+	.craalogo {
+		margin-top:-300px;
+	}
+}
+
+@media (max-width: 575.98px) { 
+	.craalogo {
+		margin-top:-150px;
+	}
+
+	.mainContent {
+		margin-top: 0px;
+	}
+}
+
+
+.wufooContainer {
+	margin-right: -4px;
+	margin-left: -4px;
+}
+
+.dashboardImage {
+	width:100%;
+	padding-bottom:20px;
+}
+
+
+#counter {
+	font-family:"Electronic Highway Sign", Arial;
+	color:#fecb38;
+	font-size:72px;
+}
+
+@media (max-width: 767.98px) { 
+	#counter {
+		font-size: 36px;
+	}
+}
+
+
+@media (max-width: 767.98px) {
+	/*Smartphones*/
+	h1 {
+		font-size: 32px;
+		padding-bottom: 32px;
+	}
+
+	h2 {
+		font-size: 24px;
+		padding-bottom: 25px;
+	}
+
+	h3 {
+		font-size: 20px;
+		/*padding-bottom: 25px;*/
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/*Tablets*/
+	h1 {
+		font-size: 36px;
+		padding-bottom: 32px;
+	}
+
+	h2 {
+		font-size: 28px;
+		padding-bottom: 25px;
+	}
+
+	h3 {
+		font-size: 22px;
+		/*padding-bottom: 25px;*/
+	}
+}
+
+@media (min-width: 992px) { 
+	/*Desktop*/
+	h1 {
+		font-size: 40px;
+		padding-bottom: 32px;
+	}
+
+	h2 {
+		font-size: 32px;
+		padding-bottom: 32px;
+	}
+
+	h3 {
+		font-size: 22px;
+		/*padding-bottom: 16px;*/
+	}
+}
