@@ -11,7 +11,11 @@
 
   <title>Tilmelding - Lancering af den ny Sprinter!</title>
 </head>
+<<<<<<< HEAD
+<body>
+=======
 <body style="background-color: #ecebe9">
+>>>>>>> master
   <div class="container">
     <div class="row pt-3 pb-3">
       <div class="col-sm-8 offset-sm-2">
@@ -26,6 +30,96 @@
       </div>
     </div>
 
+<<<<<<< HEAD
+    <div class="row pt-5">
+      <div class="col-sm-8 offset-sm-2">
+        <img src="images/top.png" class="img-fluid fullWidth">
+
+
+        <h1 class="pt-5">
+          VIP-invitation. 
+        </h1>
+        <p class="pb-5">
+          Vær med, når vi lancerer den ny Sprinter. For første gang i Danmark. Vi byder dig velkommen i Vilhelm Lauritzen Terminal. Torsdag 7. juni 2018. Du tilmelder dig via formularen her på siden.
+        </p>
+
+        <img src="images/middle.png" class="img-fluid fullWidth">
+
+        <h1 class="pt-5">
+          Kom til Danmarkspremiere på den ny Sprinter. 
+        </h1>
+        <p>
+          Velkommen i den ikoniske Vilhelm Lauritzen Terminal. Her får du en ekstraordinær mulighed for at opleve den ny Sprinter.
+        </p>
+
+
+        <h3>
+          Book prøvetur
+        </h3>
+        <p>
+          Book din egen tur med den ny Sprinter.
+        </p>
+        <h3>
+          Bliv klogere til tech talks
+        </h3>
+        <p>
+          [TEKST MANGLER]
+        </p>
+
+        <h1 class="pt-5">Tilmeld dig her.</h1>
+        <p>Tilmeld dig hurtigst muligt via formularen nedenfor, da der er et begrænset antal af billetter. Har du ikke mulighed for at deltage, vil vi bede dig melde afbud i formularen – det vil være en stor hjælp.</p>
+
+        <div id="wufoo-w3kycbb0d1l8w8" class="wufooContainer">
+          Fill out my <a href="https://dypaang.wufoo.eu/forms/w3kycbb0d1l8w8">online form</a>.
+        </div>
+        <script type="text/javascript">var w3kycbb0d1l8w8;(function(d, t) {
+          var s = d.createElement(t), options = {
+            'userName':'dypaang',
+            'formHash':'w3kycbb0d1l8w8',
+            'autoResize':true,
+            'height':'1268',
+            'defaultValues':'<?php include 'defaultvalues.php'; ?>',
+            'async':true,
+            'host':'wufoo.eu',
+            'header':'hide',
+            'ssl':true
+          };
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.eu/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { w3kycbb0d1l8w8 = new WufooForm();w3kycbb0d1l8w8.initialize(options);w3kycbb0d1l8w8.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');
+        </script>
+
+        <p>
+          <a href="<?php include('pdflink.php');?>" target="_blank">
+            Læs en uddybning af betingelserne for tilmelding her.            
+          </a>
+        </p>
+        <p>
+          <a href="#" target="_blank">
+            Læs mere om arrangementet her.
+          </a>
+        </p>
+
+
+
+      </div>
+    </div>
+
+    <div class="row pt-4">
+      <div class="col pt-3 text-center">
+        <p class="pt-3">Ankommer om:</p>
+        <p><span id="counter">00;00;00;00</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <img src="images/footer.png" class="img-fluid fullWidth">
+  </div>
+=======
     <div class="row backgroundRow">
       <div class="col">
         <img src="images/background.png" class="img-fluid">
@@ -111,13 +205,18 @@
     <div class="container">
     </div>
   </div>
+>>>>>>> master
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript">
+<<<<<<< HEAD
+    var countDownDate = new Date("Jun 7, 2018 17:00:00").getTime();
+=======
     var countDownDate = new Date("May 26, 2018 07:30:00").getTime();
+>>>>>>> master
 
 // Update the count down every 1 second
 var x = setInterval(function() {
