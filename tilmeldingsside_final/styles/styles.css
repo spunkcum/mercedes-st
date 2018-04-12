@@ -20,11 +20,14 @@
 	font-style:normal;
 }
 
+<<<<<<< HEAD
 body {
 	background-color: #000000;
 	color: white;
 }
 
+=======
+>>>>>>> master
 p {
 	font-family: "csregular", Arial;
 	font-size: 16px;
@@ -40,11 +43,15 @@ h3 {
 }
 
 a {
+<<<<<<< HEAD
 	color: #fecb38;
 }
 
 .fullWidth {
 	width:100%;
+=======
+	color: #9b3545;
+>>>>>>> master
 }
 
 .slogan {
@@ -132,8 +139,13 @@ a {
 
 
 .wufooContainer {
+<<<<<<< HEAD
 	margin-right: -4px;
 	margin-left: -4px;
+=======
+	margin-right: -5px;
+	margin-left: -5px;
+>>>>>>> master
 }
 
 .dashboardImage {
@@ -144,7 +156,11 @@ a {
 
 #counter {
 	font-family:"Electronic Highway Sign", Arial;
+<<<<<<< HEAD
 	color:#fecb38;
+=======
+	color:#9b3545;
+>>>>>>> master
 	font-size:72px;
 }
 
@@ -155,6 +171,13 @@ a {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> master
 @media (max-width: 767.98px) {
 	/*Smartphones*/
 	h1 {

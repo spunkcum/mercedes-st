@@ -11,5 +11,5 @@
  .controller('ProgramPageController', [ProgramPageController]);
 
  function ProgramPageController(){
- 	document.title = "Program";
+ 	document.title = "Mercedes-Benz Classic Car Race - Program";
  }

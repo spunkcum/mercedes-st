@@ -13,15 +13,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 	src: url('fonts/DaimlerCACArab-Regular.ttf');
 }
 
-@font-face {
-	font-family:"Electronic Highway Sign";
-	src:url("fonts/EHSMB.eot?") format("eot"),
-	url("fonts/EHSMB.woff") format("woff"),
-	url("fonts/EHSMB.TTF") format("truetype"),
-	url("fonts/EHSMB.svg#ElectronicHighwaySign") 
-	format("svg");
-}
-
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -33,32 +24,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 	padding: 0 !important;
 }
 
-body {
-	background: #000000;
-	/*
-	background: #262626;
-	background: -webkit-linear-gradient(-90deg,#262626,#171717 280px);
-	background: linear-gradient(180deg,#262626,#171717 280px);
-	*/
-}
-
-h1 {
-	font-weight: bold;
-	color : #ffffff;
-	font-size: 45px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
-h2 {
-	color : #fff;
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
 a {
 	font-family: csregular;
-	color: #fecb38;
+	color: #00adef;
 }
 
 .video {
@@ -81,7 +49,7 @@ a {
 /* Custom page header */
 .header {
 	border-bottom: 1px solid #e5e5e5;
-	margin: 0px 30px 40px 30px;
+	margin-bottom: 10px;
 
 	/* Make the masthead heading the same height as the navigation */
 	h3 {
@@ -100,9 +68,7 @@ a {
 }
 
 .navbar {
-	width: 1145px;
-	margin-right: auto;
-	margin-left: auto;
+	border-bottom: 1px solid #000;
 }
 
 ul.nav{
@@ -116,7 +82,7 @@ ul.nav{
 }
 
 .selected {
-	color: #fecb38 !important;
+	color: #fff !important;
 }
 
 .scrolled ul.nav{
@@ -142,18 +108,18 @@ ul.nav li a{
 	padding: 5px 0; 
 	margin: 0 4px; 
 	font-size: 30px;
-	color: #fff;
-	display: flex;
+	color: #000000;
+	display: inline-block;
 	font-family: cacregular;
 }
 
 ul.nav li.selected a{
-	color: #fecb38;
+	color: #00adef;
 }
 
 ul.nav li a:hover{
 	text-decoration: none; 
-	color: #fecb38;
+	color: #00adef;
 	background-color: unset;
 }
 
@@ -162,7 +128,7 @@ ul.nav li a:focus{
 }
 
 .icon-bar {
-	background-color: #fff;
+	background-color: #000000;
 }
 
 /* Custom page footer */
@@ -202,6 +168,10 @@ Content
 	margin-right: 20px;
 }
 
+hr {
+	border-top: 1px solid #000;
+}
+
 /** 
 Footer
 **/
@@ -209,75 +179,10 @@ Footer
 	border-top: unset;
 }
 
-.footerImage {
-	margin-top: -147px;
-}
-
-h1, h2, h3 {
-	font-family: cacregular;
-	color: #fff;
-}
-
-h3 {
-	margin-top:40px !important;
-}
-
-p {
-	font-family: csregular;
-	color : #ffffff;
-	font-size : 20px;
-}
-
-@media (max-width: 1440px) {
-	.navbar {
-		width: 1145px;
-		margin-right: auto; 
-		margin-left: auto;	
-	}
-}
-
-@media (max-width: 1024px) {
-	.navbar {
-		width: 950px;
-		margin-right: auto; 
-		margin-left: auto;	
-	}
-
-	.footerImage {
-		margin-top: -135px;
-	}
-}
-
-@media (max-width: 768px) {
-	.navbar {
-		width: 740px;
-		margin-right: auto; 
-		margin-left: auto;	
-	}
-
-	.header {
-		margin : 0 5px 40px 5px;
-	}
-
-	.footerImage {
-		margin-top: -115px;
-	}
-}
-
 @media (max-width: 767px) {
-	.navbar {
-		width: auto;
-		margin-right: auto; 
-		margin-left: auto;	
-	}
-
-	h1 {
-		font-weight: unset;
-	}
 
 	ul.nav {
 		display: grid;
-		justify-content: center;
 	}
 
 	.mobileTopMargin {
@@ -293,14 +198,200 @@ p {
 	}
 }
 
-.programList p span {
-	margin-right: 25px;
+
+
+
+
+
+
+
+
+
+//Fra tilmeldingsside
+
+body {
+	background-color: #ecebe9;
+	font-family: "csregular", Arial;
+	font-size: 16px;
 }
 
+p {
+	font-family: "csregular", Arial;
+	font-size: 16px;
+}
+
+h1, h2, h3 {
+	font-family: cacregular, Arial;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+h3 {
+	font-size: 1.55em;
+}
+
+a {
+	color: #9b3545;
+}
+
+.slogan {
+	position:  absolute; 
+	bottom: 0; 
+	right: 0; 
+	padding-right: 15px; 
+	padding-bottom: 10px;
+	width:133px;
+}
+
+.background {
+	background-image: url(../images/background.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 2000px;
+}
+
+.craalogo {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top:-350px;
+}
+
+.mainContent {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: -50px;
+}
+
+
+@media (max-width: 575.98px) { 
+	.craalogo {
+		margin-top:-150px;
+	}
+
+	.mainContent {
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 575.98px) { 
+	.craalogo {
+		margin-top:-150px;
+	}
+
+	.mainContent {
+		margin-top: -20px;
+	}
+}
+
+@media (min-width: 767.98px) { 
+	.craalogo {
+		margin-top:-250px;
+	}
+
+	.mainContent {
+		margin-top: -30px;
+	}
+}
+
+@media (min-width: 991.98px) { 
+	.craalogo {
+		margin-top:-300px;
+	}
+}
+
+@media (min-width: 1199.98px) { 
+	.craalogo {
+		margin-top:-300px;
+	}
+}
+
+@media (max-width: 575.98px) { 
+	.craalogo {
+		margin-top:-150px;
+	}
+
+	.mainContent {
+		margin-top: 0px;
+	}
+}
+
+
+.wufooContainer {
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+.dashboardImage {
+	width:100%;
+	padding-bottom:20px;
+}
+
+
 #counter {
-	font-family:"Electronic Highway Sign";
-	color:yellow;
+	font-family:"Electronic Highway Sign", Arial;
+	color:#9b3545;
 	font-size:72px;
+}
+
+ul.navbar-nav {
+	text-align:center;
+	width:100%;
+	margin-right:0;
+	margin-left:0;
+}
+ul.navbar-nav li:first-child{
+	text-align:left;
+}
+
+ul.navbar-nav li:last-child{
+	text-align:right;
+}
+
+@media (max-width: 767.98px) {
+	ul.navbar-nav li {
+		text-align:center!important;
+		width:100%;
+	}
+}
+
+
+li.nav-item {
+	display: block; 
+	text-decoration: none;
+	line-height: 30px; 
+	padding: 5px 0; 
+	margin: 0 4px; 
+	font-size: 22px;
+	color: #000000;
+	display: inline-block;
+	font-family: cacregular;
+	width:33%
+}
+
+li.nav-item a {
+	color: #000000;
+}
+
+li.nav-item a.selected {
+	color: #9b3545!important;
+}
+
+.navbar {
+	border-radius: 0px;
+	border:0;
+	z-index: 999;
+	width:100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar-toggler {
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.programContainer p span {
+	width:200px;
 }
 
 @media (max-width: 767.98px) { 
@@ -310,30 +401,60 @@ p {
 }
 
 
-@media (max-width: 425px) { 
-	.imageSizeLeft {
-		height: 60px !important;
+
+
+
+
+@media (max-width: 767.98px) {
+	/*Smartphones*/
+	h1 {
+		font-size: 32px;
+		padding-bottom: 32px;
 	}
 
-	.imageSizeRight {
-		height: 50px !important;
+	h2 {
+		font-size: 24px;
+		padding-bottom: 25px;
 	}
 
-	.programList p span {
-		margin-right: 10px;
-	}
-
-	.header {
-		margin: 0px 0px 20px 0px;
-	}
-
-	.footerImage {
-		margin-top: -80px;
+	h3 {
+		font-size: 20px;
+		/*padding-bottom: 25px;*/
 	}
 }
 
-@media (max-width: 375px) {
-	.footerImage {
-		margin-top: -70px;
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/*Tablets*/
+	h1 {
+		font-size: 36px;
+		padding-bottom: 32px;
+	}
+
+	h2 {
+		font-size: 28px;
+		padding-bottom: 25px;
+	}
+
+	h3 {
+		font-size: 22px;
+		/*padding-bottom: 25px;*/
+	}
+}
+
+@media (min-width: 992px) { 
+	/*Desktop*/
+	h1 {
+		font-size: 40px;
+		padding-bottom: 32px;
+	}
+
+	h2 {
+		font-size: 32px;
+		padding-bottom: 32px;
+	}
+
+	h3 {
+		font-size: 22px;
+		/*padding-bottom: 16px;*/
 	}
 }

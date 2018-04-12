@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- build:css(.) styles/vendor.css -->
 	<!-- bower:css -->
 	<!-- endbower -->
@@ -25,149 +26,89 @@
 		Du bruger en virkelig gammel browser! Vi anbefaler du opdatere!
 	<![endif]-->
 
-	<!-- Add your site or application content here -->
-	<div class="header">
-		<img src="images/logo.png" class="img-fluid float-left; imageSizeLeft" style="margin-top: 20px;">
 
-		<img src="images/slogan.png" class="img-fluid float-right imageSizeRight" style="float: right; margin-top: 25px; height: 70px;">
-	</div>
+	<div class="container">
+		<div class="row pt-3 pb-3">
+			<div class="col-sm-8 offset-sm-2">
+				<div class="row">
+					<div class="col-4">
+						<img src="images/logo.png" class="img-fluid"/>
+					</div>
+					<div class="col-8">
+						<img src="images/slogan.png" class="img-fluid slogan"/>
+					</div>
+				</div>
+				<div class="row">
+					<nav class="navbar navbar-expand-sm navbar-light pt-5 pb-3">
 
-	<nav class="navbar">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar">
-				</span>
 
-				<span class="icon-bar">
-				</span>
-				
-				<span class="icon-bar">
-				</span>
-			</button>
-		</div>
 
-		<div class="navbar-collapse collapse no-padding" style="margin-bottom: 20px;">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="#!/forside" ng-click="selectPage('forside');" ng-class="{selected : page == 'forside'}">
-						Forside
-					</a>
-				</li>
-				<li>
-					<a href="#!/program" ng-click="selectPage('program');" ng-class="{selected : page == 'program'}">
-						Program
-					</a>
-				</li>
-				<li>
-					<a href="#!/info" ng-click="selectPage('information');" ng-class="{selected : page == 'information'}">
-						Info
-					</a>
-				</li>
-				<li>
-					<a href="#!/oversigt" ng-click="selectPage('oversigt');" ng-class="{selected : page == 'oversigt'}">
-						Kort
-					</a>
-				</li>
-				<li>
-					<a href="#!/faq" ng-click="selectPage('faq');" ng-class="{selected : page == 'faq'}">
-						FAQ
-					</a>
-				</li>
-				<!-- 
-					Skal først bruges efter første event
-				<li>
-					<a href="#!/galleri" ng-click="selectPage('galleri');" ng-class="{selected : page == 'galleri'}">
-						Galleri
-					</a>
-				</li> -->
-			</ul>
-		</div>			
-	</nav>
+						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
 
-	<div class="container content">
-		<div class="col-md-12 no-padding" ng-view>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-		</div>
 
-		<div class="col-md-12 mt-5">
-			<div class="col mt-5">
-				<p class="text-center">
-					Ankommer om
-				</p>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item"> 
+									<a href="#!/forside" ng-click="selectPage('forside');" ng-class="{selected : page == 'forside'}">
+										Forside
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#!/program" ng-click="selectPage('program');" ng-class="{selected : page == 'program'}">
+										Program
+									</a>
+								</li class="nav-item">
+								<li class="nav-item">
+									<a href="#!/info" ng-click="selectPage('information');" ng-class="{selected : page == 'information'}">
+										Info
+									</a>
+								</li>
+							</ul>
+						</div>			
+					</nav>
+				</div>
 			</div>
 		</div>
 
-		<div class="col-md-12 mt-2">
+
+
+		<div class="row backgroundRow">
 			<div class="col">
-				<p class="text-center" style="margin-bottom: 0px;">
-					<span id="counter">
-						00;00;00;00
-					</span>
-				</p>
+				<img src="images/background.png" class="img-fluid">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2">
+				<div class="row">
+					<div class="col">
+						<img src="images/craalogo.png" class="img-fluid craalogo">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="footer" style="padding: 0px;">
-		<img src="images/bund_banner.png" class="img-fluid footerImage" style="max-width: 100%; height: auto; width: 100%;">
+	<div class="container content" ng-view>
 	</div>
 
-	<script type="text/javascript">
-		var countDownDate = new Date("Jun 7, 2018 17:00:00").getTime();
+	<div class="container">
 
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-			// Get todays date and time
-			var now = new Date().getTime();
-
-			// Find the distance between now an the count down date
-			var distance = countDownDate - now;
-
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Display the result in the element with id="demo"
-			/*document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-			+ minutes + "m " + seconds + "s ";*/
-			var dayString;
-			var hourString;
-			var minuteString;
-			var secondString;
-
-			if(days < 10){
-				dayString = "0" + days;
-			} else {
-				dayString = days;
-			}
-			if(hours < 10){
-				hourString = "0" + hours;
-			} else {
-				hourString = hours;
-			}
-			if(minutes < 10){
-				minuteString = "0" + minutes;
-			} else {
-				minuteString = minutes;
-			}
-			if(seconds < 10){
-				secondString = "0" + seconds;
-			} else {
-				secondString = seconds;
-			}
-
-
-			document.getElementById("counter").innerHTML = dayString + ";" + hourString + ";" + minuteString + ";" + secondString;
-
-			// If the count down is finished, write some text 
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("counter").innerHTML = "00;00;00;00";
-			}
-		}, 1000);
-	</script>
+		<div class="row backgroundRow">
+			<div class="col">
+				<div class="row pt-4">
+					<div class="col pt-5 text-center">
+						<img src="images/logobund.png"/>
+						<p class="pt-3">Eventen starter om:</p>
+						<p><span id="counter">00;00;00;00</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
@@ -185,6 +126,9 @@
 	<!-- endbower -->
 	<!-- endbuild -->
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	<!-- build:js({.tmp,app}) scripts/scripts.js -->
 	<script src="scripts/app.js"></script>
 	<script src="scripts/controllers/main.js"></script>
@@ -193,5 +137,66 @@
 	<script src="scripts/controllers/practicalInformation.js"></script>
 	<script src="scripts/controllers/faq.js"></script>
 	<!-- endbuild -->
+
+
+	<script type="text/javascript">
+		var countDownDate = new Date("May 26, 2018 07:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  /*document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";*/
+  var dayString;
+  var hourString;
+  var minuteString;
+  var secondString;
+
+  if(days < 10){
+  	dayString = "0" + days;
+  } else {
+  	dayString = days;
+  }
+  if(hours < 10){
+  	hourString = "0" + hours;
+  } else {
+  	hourString = hours;
+  }
+  if(minutes < 10){
+  	minuteString = "0" + minutes;
+  } else {
+  	minuteString = minutes;
+  }
+  if(seconds < 10){
+  	secondString = "0" + seconds;
+  } else {
+  	secondString = seconds;
+  }
+
+
+  document.getElementById("counter").innerHTML = dayString + ";" + hourString + ";" + minuteString + ";" + secondString;
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+  	clearInterval(x);
+  	document.getElementById("counter").innerHTML = "00;00;00;00";
+  }
+}, 1000);
+</script>
+
+
 </body>
 </html>
