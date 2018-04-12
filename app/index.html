@@ -26,7 +26,6 @@
 		Du bruger en virkelig gammel browser! Vi anbefaler du opdatere!
 	<![endif]-->
 
-
 	<div class="container">
 		<div class="row pt-3 pb-3">
 			<div class="col-sm-8 offset-sm-2">
@@ -34,22 +33,20 @@
 					<div class="col-4">
 						<img src="images/logo.png" class="img-fluid"/>
 					</div>
+				
 					<div class="col-8">
 						<img src="images/slogan.png" class="img-fluid slogan"/>
 					</div>
 				</div>
+
 				<div class="row">
-					<nav class="navbar navbar-expand-sm navbar-light pt-5 pb-3">
-
-
-
+					<nav class="navbar navbar-expand-sm navbar-dark pt-5 pb-3">
 						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-
-							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggler-icon">
+							</span>
 						</button>
 
-
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent" style="box-shadow: unset;">
 							<ul class="navbar-nav mr-auto">
 								<li class="nav-item"> 
 									<a href="#!/forside" ng-click="selectPage('forside');" ng-class="{selected : page == 'forside'}">
@@ -62,7 +59,7 @@
 									</a>
 								</li class="nav-item">
 								<li class="nav-item">
-									<a href="#!/info" ng-click="selectPage('information');" ng-class="{selected : page == 'information'}">
+									<a href="#!/info" ng-click="selectPage('info');" ng-class="{selected : page == 'info'}">
 										Info
 									</a>
 								</li>
@@ -72,43 +69,26 @@
 				</div>
 			</div>
 		</div>
-
-
-
-		<div class="row backgroundRow">
-			<div class="col">
-				<img src="images/background.png" class="img-fluid">
-
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-8 offset-sm-2">
-				<div class="row">
-					<div class="col">
-						<img src="images/craalogo.png" class="img-fluid craalogo">
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<div class="container content" ng-view>
 	</div>
 
 	<div class="container">
-
 		<div class="row backgroundRow">
 			<div class="col">
 				<div class="row pt-4">
 					<div class="col pt-5 text-center">
-						<img src="images/logobund.png"/>
-						<p class="pt-3">Eventen starter om:</p>
+						<!-- <img src="images/logobund.png"/> -->
+						<p class="pt-3">Ankommer om</p>
 						<p><span id="counter">00;00;00;00</span></p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+
+	<img src="images/footer.png" class="img-fluid" style="width: 100%;">
 
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->

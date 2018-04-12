@@ -13,6 +13,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 	src: url('fonts/DaimlerCACArab-Regular.ttf');
 }
 
+@font-face {
+	font-family:"Electronic Highway Sign";
+	src:url("fonts/EHSMB.eot?") format("eot"),
+	url("fonts/EHSMB.woff") format("woff"),
+	url("fonts/EHSMB.TTF") format("truetype"),
+	url("fonts/EHSMB.svg#ElectronicHighwaySign") 
+	format("svg");
+}
+
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -26,7 +35,23 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 a {
 	font-family: csregular;
-	color: #00adef;
+	color: #fff;
+}
+
+h1 {
+	color: #fff;
+}
+
+h2 {
+	color: #fff;
+}
+
+h3 {
+	color: #fff;
+}
+
+li {
+	color : #fff;
 }
 
 .video {
@@ -44,6 +69,10 @@ a {
 
 .footer {
 	margin-top: 50px;
+
+	img {
+		
+	}
 }
 
 /* Custom page header */
@@ -91,7 +120,7 @@ ul.nav{
 	top: 0; 
 	right: 0; 
 	left: 0; 
-	background-color: #75b2ba; 
+	background-color: #000; 
 	opacity: 1;
 }
 
@@ -108,7 +137,7 @@ ul.nav li a{
 	padding: 5px 0; 
 	margin: 0 4px; 
 	font-size: 30px;
-	color: #000000;
+	color: #fff;
 	display: inline-block;
 	font-family: cacregular;
 }
@@ -119,7 +148,7 @@ ul.nav li.selected a{
 
 ul.nav li a:hover{
 	text-decoration: none; 
-	color: #00adef;
+	color: #fecb38;
 	background-color: unset;
 }
 
@@ -198,19 +227,10 @@ Footer
 	}
 }
 
-
-
-
-
-
-
-
-
-
 //Fra tilmeldingsside
 
 body {
-	background-color: #ecebe9;
+	background-color: #000;
 	font-family: "csregular", Arial;
 	font-size: 16px;
 }
@@ -218,6 +238,7 @@ body {
 p {
 	font-family: "csregular", Arial;
 	font-size: 16px;
+	color : #fff;
 }
 
 h1, h2, h3 {
@@ -230,7 +251,7 @@ h3 {
 }
 
 a {
-	color: #9b3545;
+	color: #fecb38;
 }
 
 .slogan {
@@ -240,6 +261,10 @@ a {
 	padding-right: 15px; 
 	padding-bottom: 10px;
 	width:133px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
 }
 
 .background {
@@ -330,8 +355,13 @@ a {
 
 #counter {
 	font-family:"Electronic Highway Sign", Arial;
-	color:#9b3545;
+	color:#fecb38 ;
 	font-size:72px;
+}
+
+.timestamp {
+	color: #fecb38;
+	font-family:"Electronic Highway Sign", Arial;
 }
 
 ul.navbar-nav {
@@ -363,18 +393,18 @@ li.nav-item {
 	padding: 5px 0; 
 	margin: 0 4px; 
 	font-size: 22px;
-	color: #000000;
+	color: #fff;
 	display: inline-block;
 	font-family: cacregular;
 	width:33%
 }
 
 li.nav-item a {
-	color: #000000;
+	color: #fff;
 }
 
 li.nav-item a.selected {
-	color: #9b3545!important;
+	color: #fecb38 !important;
 }
 
 .navbar {
@@ -399,11 +429,6 @@ li.nav-item a.selected {
 		font-size: 36px;
 	}
 }
-
-
-
-
-
 
 @media (max-width: 767.98px) {
 	/*Smartphones*/
