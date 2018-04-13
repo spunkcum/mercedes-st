@@ -1,0 +1,47 @@
+<?xml version = "1.0"?>
+<project name = "Mercedes-Benz - Hangar" default = "info">
+	<target name = "info">
+		<echo>Build file for Hangar sites</echo>
+	</target>
+
+	<target name = "build" depends="clean">
+		<echo>Building...</echo>
+
+		<copyToTarget target="ejnerhessel"/>
+		<copyToTarget target="pchristensen"/>
+		<copyToTarget target="bentpedersen"/>
+		<copyToTarget target="lemvig"/>
+		<copyToTarget target="mbcph"/>
+		<copyToTarget target="mbdanmark"/>
+		<copyToTarget target="medarbejder"/>
+
+	</target>
+
+	<target name = "clean">
+		<echo>Cleaning...</echo>
+		<delete dir="dist"/>
+	</target>
+
+	<macrodef name="copyToTarget">
+		<attribute name="target"/>
+		<sequential>
+			<echo>Copying to target @{target}...</echo>
+
+			<copy todir="dist/@{target}/styles">  
+				<fileset dir="styles"/>
+			</copy> 
+			<copy todir="dist/@{target}/images">  
+				<fileset dir="images"/>
+			</copy> 
+
+			<copy file="index.php" tofile="dist/@{target}/index.php"/>
+			<copy file="favicon.ico" tofile="dist/@{target}/favicon.ico"/>
+
+			<copy todir="dist/@{target}" overwrite="true">
+				<fileset dir="defaultvalues/@{target}"/>
+			</copy>
+
+		</sequential>
+	</macrodef>
+
+</project>
