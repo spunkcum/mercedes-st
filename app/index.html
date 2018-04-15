@@ -31,92 +31,97 @@
 			<div class="col-sm-8 offset-sm-2">
 				<div class="row">
 					<div class="col">
-						<img src="images/nytlogo.png" class="img-fluid" style="max-width: 64px"/>
+						<img src="images/nytlogo.png" class="img-fluid" style="max-height: 64px"/>
 					</div>
 				</div>
+			</div>
+
+			<div class="col-sm-7 offset-sm-2">
 
 				<div class="row">
-					<nav class="navbar navbar-expand-sm navbar-dark pt-5 pb-3">
-						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-							<span class="navbar-toggler-icon">
-							</span>
-						</button>
+					<div class="col">
+						<nav class="navbar navbar-expand-sm navbar-dark pt-4 pb-5">
+							<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+								<span class="navbar-toggler-icon">
+								</span>
+							</button>
 
-						<div class="collapse navbar-collapse" id="navbarSupportedContent" style="box-shadow: unset;">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item"> 
-									<a href="#!/forside" ng-click="selectPage('forside');" ng-class="{selected : page == 'forside'}">
-										Forside
-									</a>
-								</li>
-								<li class="nav-item">
-									<a href="#!/program" ng-click="selectPage('program');" ng-class="{selected : page == 'program'}">
-										Program
-									</a>
-								</li class="nav-item">
-								<li class="nav-item">
-									<a href="#!/info" ng-click="selectPage('info');" ng-class="{selected : page == 'info'}">
-										Info
-									</a>
-								</li>
-							</ul>
-						</div>			
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container content" ng-view>
-	</div>
-
-	<div class="container">
-		<div class="row backgroundRow">
-			<div class="col">
-				<div class="row pt-4">
-					<div class="col pt-5 text-center">
-						<!-- <img src="images/logobund.png"/> -->
-						<p class="pt-3">Ankommer om</p>
-						<p><span id="counter">00;00;00;00</span></p>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent" style="box-shadow: unset;">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item"> 
+										<a href="#!/forside" ng-click="selectPage('forside');" ng-class="{selected : page == 'forside'}">
+											Forside
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="#!/program" ng-click="selectPage('program');" ng-class="{selected : page == 'program'}">
+											Program
+										</a>
+									</li class="nav-item">
+									<li class="nav-item">
+										<a href="#!/info" ng-click="selectPage('info');" ng-class="{selected : page == 'info'}">
+											Info
+										</a>
+									</li>
+								</ul>
+							</div>			
+						</nav>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<img src="images/footer.png" class="img-fluid" style="width: 100%;">
+<div class="container content" ng-view>
+</div>
 
-	<!-- build:js scripts/vendor.js -->
-	<!-- bower:js -->
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.js"></script>
-	<script src="bower_components/angular-aria/angular-aria.js"></script>
-	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-	<script src="bower_components/angular-messages/angular-messages.js"></script>
-	<script src="bower_components/angular-resource/angular-resource.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-	<script src="bower_components/angular-touch/angular-touch.js"></script>
-	<!-- endbower -->
-	<!-- endbuild -->
+<div class="container">
+	<div class="row backgroundRow">
+		<div class="col">
+			<div class="row">
+				<div class="col pt-5 text-center">
+					<!-- <img src="images/logobund.png"/> -->
+					<p class="pt-3">Ankommer om:</p>
+					<p><span id="counter">00;00;00;00</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<img src="images/footer.png" class="img-fluid" style="width: 100%;">
 
-	<!-- build:js({.tmp,app}) scripts/scripts.js -->
-	<script src="scripts/app.js"></script>
-	<script src="scripts/controllers/main.js"></script>
-	<script src="scripts/controllers/mapOverview.js"></script>
-	<script src="scripts/controllers/program.js"></script>
-	<script src="scripts/controllers/practicalInformation.js"></script>
-	<script src="scripts/controllers/faq.js"></script>
-	<!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/mapOverview.js"></script>
+<script src="scripts/controllers/program.js"></script>
+<script src="scripts/controllers/practicalInformation.js"></script>
+<script src="scripts/controllers/faq.js"></script>
+<!-- endbuild -->
 
 
-	<script type="text/javascript">
-		var countDownDate = new Date("Jun 07, 2018 17:00:00").getTime();
+<script type="text/javascript">
+	var countDownDate = new Date("Jun 07, 2018 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

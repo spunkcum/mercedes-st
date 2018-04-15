@@ -1,6 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 @font-face {
@@ -231,11 +230,11 @@ Footer
 
 body {
 	background-color: #000;
-	font-family: "csregular", Arial;
+	//font-family: "csregular", Arial;
 	font-size: 16px;
 }
 
-p {
+p, li {
 	font-family: "csregular", Arial;
 	font-size: 16px;
 	color : #fff;
@@ -283,8 +282,6 @@ a {
 }
 
 .mainContent {
-	padding-left: 15px;
-	padding-right: 15px;
 	margin-top: -50px;
 }
 
@@ -391,7 +388,7 @@ li.nav-item {
 	text-decoration: none;
 	line-height: 30px; 
 	padding: 5px 0; 
-	margin: 0 4px; 
+	margin: 0 0px; 
 	font-size: 22px;
 	color: #fff;
 	display: inline-block;
