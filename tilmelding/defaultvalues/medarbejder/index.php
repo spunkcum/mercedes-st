@@ -16,11 +16,8 @@
     <div class="row pt-3 pb-3">
       <div class="col-sm-8 offset-sm-2">
         <div class="row">
-          <div class="col-4">
-            <img src="images/logo.png" class="img-fluid"/>
-          </div>
-          <div class="col-8">
-            <img src="images/slogan.png" class="img-fluid slogan"/>
+          <div class="col"> 
+            <img src="images/nytlogo.png" class="img-fluid" style="max-height: 64px"/> 
           </div>
         </div>
       </div>
@@ -35,13 +32,17 @@
           VIP-invitation. 
         </h1>
         <p class="pb-5">
-          Vær med, når vi lancerer den ny Sprinter. For første gang i Danmark. Vi byder dig velkommen i Vilhelm Lauritzen Terminal. Torsdag 7. juni 2018. Du tilmelder dig via formularen her på siden.
+          Vær med, når vi lancerer den ny Sprinter. Vi byder dig velkommen i Vilhelm Lauritzen Terminal.  
+          <br> 
+          Torsdag 7. juni 2018.  
+          <br><br> 
+          Du tilmelder dig via formularen her på siden. 
         </p>
 
         <img src="images/middle.png" class="img-fluid fullWidth">
 
         <h1 class="pt-5">
-          Kom til Danmarkspremiere på den ny Sprinter. 
+          Kom til premiere på den ny Sprinter. 
         </h1>
         <p>
           Velkommen i den ikoniske Vilhelm Lauritzen Terminal. Her får du en ekstraordinær mulighed for at opleve den ny Sprinter.
@@ -58,7 +59,7 @@
           Bliv klogere til tech talks
         </h3>
         <p>
-          [TEKST MANGLER]
+          Deltag i forskellige tech talks, hvor vi kommer hele vejen rundt om de mange nye spændende features.
         </p>
 
         <h1 class="pt-5">Tilmeld dig her.</h1>
@@ -85,7 +86,7 @@
             })(document, 'script');</script>
 
             <p>
-              <a href="<?php include('pdflink.php');?>" target="_blank">
+              <a href="betingelser.pdf" target="_blank"> 
                 Læs en uddybning af betingelserne for tilmelding her.            
               </a>
             </p>
