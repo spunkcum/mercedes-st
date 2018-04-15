@@ -1,1 +1,1 @@
-field6=Mercedes-Benz Copenhagen
+field6=Mercedes-Benz CPH
