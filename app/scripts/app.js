@@ -23,9 +23,16 @@ angular
 	'ngResource',
 	'ngRoute',
 	'ngSanitize',
-	'ngTouch'
+	'ngTouch',
+	'angular-google-analytics'
 ])
 .controller('MainController', ['$rootScope', '$scope', MainController])
+
+.config(['AnalyticsProvider', function (AnalyticsProvider) {
+   // Add configuration code as desired
+   AnalyticsProvider.setAccount('UA-69011597-12');  //UU-XXXXXXX-X should be your tracking code
+}]).run(['Analytics', function(Analytics) { }])
+
 .config(function ($routeProvider) {
 	$routeProvider
 	.when('/forside', {
