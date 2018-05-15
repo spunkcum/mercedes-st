@@ -41,7 +41,7 @@
         <h1 class="pt-5">
           VIP-invitation. 
         </h1>
-        <p class="pb-5">
+        <p class="pb-5 mb-0">
           Vær med, når vi lancerer den ny Sprinter. Vi byder dig velkommen i Vilhelm Lauritzen Terminal. 
           <br>
           Torsdag 7. juni 2018. 
@@ -49,7 +49,10 @@
           Du tilmelder dig via formularen her på siden.
         </p>
 
-        <img src="images/middle.png" class="img-fluid fullWidth">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/269888252" width="640" height="360" frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
 
         <h1 class="pt-5">
           Kom til premiere på den ny Sprinter. 
