@@ -15,6 +15,7 @@ angular
 	'mercedesApp.praticalInformation',
 	'mercedesApp.mapOverview',
 	'mercedesApp.faq',
+	'mercedesApp.gallery',
 
 	'ngAnimate',
 	'ngAria',
@@ -61,9 +62,9 @@ angular
 		controllerAs: 'main'
 	})
 	.when('/galleri', {
-		templateUrl: 'views/main.html',
-		controller: 'MainCtrl',
-		controllerAs: 'main'
+		templateUrl: 'views/gallery.html',
+		controller: 'GalleryController',
+		controllerAs: 'gallery'
 	})
 	.otherwise({
 		redirectTo: '/forside'
@@ -77,4 +78,20 @@ function MainController($rootScope, $scope){
 	$scope.selectPage = function(page){
 		$scope.page = page;
 	};
+
+	var url = document.URL.split("#!");
+
+	var urlPath = url[(url.length - 1)];
+
+	if(urlPath.indexOf("forside") != -1){
+		$scope.page = "forside";
+	} else if (urlPath.indexOf("program") != -1){
+		$scope.page = "program";
+	} else if (urlPath.indexOf("info") != -1){
+		$scope.page = "info";
+	} else if (urlPath.indexOf("oversigt") != -1){
+		$scope.page = "oversigt";
+	} else if (urlPath.indexOf("galleri") != -1){
+		$scope.page = "galleri";
+	}
 }

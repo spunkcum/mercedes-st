@@ -11,5 +11,5 @@
  .controller('HomePageController', [HomePageController]);
 
  function HomePageController(){
- 	document.title = "Mercedes-Benz Classic Car Race - Forside";
+ 	document.title = "Forside";
  }
